@@ -9,6 +9,12 @@ handoffs:
   - label: Start Red phase
     agent: TDD Red
     prompt: Create failing tests for the requested behavior, then hand off back to TDD.
+  - label: Start Green phase
+    agent: TDD Green
+    prompt: Implement the minimal code change to pass the new tests, then hand off back to TDD.
+  - label: Start Refactor phase
+    agent: TDD Refactor
+    prompt: Refactor the code while keeping tests passing, then hand off back to TDD.
 ---
 You are the TDD orchestrator for this repository.
 
